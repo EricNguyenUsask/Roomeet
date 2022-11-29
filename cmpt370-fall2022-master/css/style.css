@@ -1,0 +1,469 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Montserrat";
+  font-size: 22px;
+
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* nav */
+.wrapper-navbar {
+  width: 100vw;
+}
+
+.brand a {
+  font-weight: 800;
+  font-size: 35px;
+  color: #f0909d;
+  margin-right: 50px;
+  text-decoration: none;
+}
+.card{
+  box-shadow: -20px -20px 60px #fff,
+  20px 20px 60px #bebebe,
+  inset 20px 20px 60px #fff,
+  inset -20px 20px 60px #bebebe;
+}
+
+.item {
+  margin-top: 12px;
+  margin-left: 50px;
+
+}
+
+.item a {
+  font-weight: 600;
+  font-size: 24px;
+  color: #f0909d;
+  text-decoration: none;
+
+}
+
+
+
+.notification {
+  position: relative;
+
+}
+
+
+.notification span {
+  position: absolute;
+  background-color: #f0909d;
+  border-radius: 100px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  right: 2px;
+  top: 3px;
+
+}
+
+/* title */
+.wrapper-title {
+  margin: 10px 40px;
+}
+
+
+
+.center .suggestion {
+  background: #181818;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 5px 10px;
+  width: 150px;
+  border: 0px;
+  margin-right: 10px;
+  
+}
+
+
+
+.center {
+  margin-left: 125px;
+}
+
+
+.center .matching {
+  background: #8b8b8b;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 5px 10px;
+  border: 1px solid #8b8b8b;
+  width: 150px;
+  border: 0px;
+  margin-left: 40px;
+}
+
+.suggestion{
+  transition: transform 250ms;
+}
+
+.suggestion:hover {
+  transform: translateY(-10px);
+  background-color: #a2b80c;
+}
+
+.matching{
+
+  transition: transform 250ms;
+}
+
+.matching:hover {
+  transform: translateY(-10px);
+  background-color: #1282bf;
+}
+
+
+.end .filter_b {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #e77887;
+}
+
+.end {
+  background: white;
+  font-weight: 500;
+  font-size: 22px;
+  color: #f0909d;
+  border-radius: 100px;
+  border: 1px solid #f0909d;
+}
+
+.end img {
+  vertical-align: middle;
+  padding-left: 15px !important;
+
+}
+
+.filter {
+  font-weight: 500;
+  font-size: 22px;
+  color: #f0909d;
+  text-align: center;
+  vertical-align: middle;
+  padding-right: 15px;
+}
+
+/* content */
+.wrapper-content {
+  margin: 10px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  box-sizing: border-box;
+  flex: 1 0 21%;
+  /* 21 * 4 = 84% => 16% để margin vs padding*/
+  margin: 32px 20px;
+  border-color: white;
+
+}
+
+.card span {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  color: #8B8B8B;
+
+
+}
+
+.card-information {
+  display: absolute !important;
+  bottom: 0px;
+  border-color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.card p {
+  top: 0;
+  position: absolute;
+}
+
+.pro1 {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  background-color: #e9dde7;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 0.9;
+}
+
+.pro1:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: #353a3c;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-solid fa-circle-info {
+  position: right;
+}
+
+
+.end {
+  font-size: 25px;
+  box-shadow: inset 0 0 0 0 #88cee6;
+  color: #88cee6;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+
+.filter_b {
+  border: none;
+  background: transparent;
+}
+
+.end:hover {
+  box-shadow: inset 100px 0 0 0 #88cee6;
+  color: white;
+}
+
+.infomation {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-size: 20px;
+  transition: transform .2s;
+}
+
+.infomation:hover {
+  color: #e77887;
+  transform: scale(1.65);
+}
+
+.info_button {
+
+  display: flex;
+  padding: 20px;
+}
+
+
+
+
+#colour1 {
+  border: 0.76px solid rgba(110, 109, 121, 0.7);
+  border-radius: 50px;
+  padding: 5px;
+  color: #000;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  background-color: transparent;
+
+  box-shadow: 0px 8px 16px 0px rgba(249, 47, 195, 0.2);
+  transition: all 1s ease-in;
+}
+
+#colour1:hover {
+  background: rgb(238, 207, 211);
+}
+
+b {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+
+
+.filter-block {
+  display: none;
+  position: relative;
+  top: 10px;
+  left: 60px;
+  gap: 2.4rem;
+  margin-bottom: 30px;
+  
+}
+
+.nav-item:hover{
+  transform: scale(1.25);
+  transition: transform .4s;
+}
+
+.filter-block.show {
+  display: flex;
+}
+
